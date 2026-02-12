@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaishali Shah | Portfolio</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;600;700&family=Space+Mono&family=Courier+New&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/chatbot.css">
+</head>
+
+<body class="light-mode">
+
+    <!-- Theme Switcher -->
+    <div class="theme-switcher">
+        <button class="theme-btn active" data-theme="light-mode" title="Light"><i class="fas fa-sun"></i></button>
+        <button class="theme-btn" data-theme="dark-mode" title="Dark"><i class="fas fa-moon"></i></button>
+        <button class="theme-btn" data-theme="retro-mode" title="Retro"><i class="fas fa-gamepad"></i></button>
+        <button class="theme-btn" data-theme="neon-mode" title="Neon"><i class="fas fa-bolt"></i></button>
+    </div>
+
+    <!-- Background -->
+    <div class="background-shapes">
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+
+    <nav class="glass-nav">
+        <!-- Replaced Text Logo with Image -->
+        <!-- Added timestamp to bust cache for image -->
+        <div class="logo-container">
+            <img src="assets/images/profile.jpg" alt="VS" class="nav-logo-img"
+                onerror="this.src='https://ui-avatars.com/api/?name=Vaishali+Shah&background=db2777&color=fff&size=256'">
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#video-showcase">Media</a></li>
+            <li><a href="#music-lounge">Music</a></li>
+            <li><a href="#puzzle">Puzzle</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="nav-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="hero-content animate-slide-right">
+                <h1>Vaishali Shah</h1>
+                <h2>Supply Chain & CIS Specialist</h2>
+                <p>Bridging the gap between business operations and technology with data-driven insights and efficient
+                    systems.</p>
+                <a href="#contact" class="btn-primary">Get in Touch</a>
+            </div>
+
+            <div class="hero-visuals animate-slide-left">
+                <!-- User Image -->
+                <div class="hero-image-container">
+                    <img src="assets/images/profile.jpg" alt="Vaishali Shah"
+                        onerror="this.src='https://ui-avatars.com/api/?name=Vaishali+Shah&background=db2777&color=fff&size=256'">
+                </div>
+
+                <!-- Status Dashboard -->
+                <div class="status-dashboard glass-card">
+                    <div class="widget-header">
+                        <h3>Status Hub</h3>
+                        <div class="live-indicator"><span class="blink"></span> Live</div>
+                    </div>
+
+                    <!-- Weather & Time Row -->
+                    <div class="widget-item weather-widget" style="justify-content: space-between;">
+                        <div style="display:flex; align-items:center; gap:10px;">
+                            <div class="weather-icon"><i class="fas fa-cloud-sun"></i></div>
+                            <div class="weather-info">
+                                <span id="temp">--°F</span>
+                                <span id="location">Caldwell, NJ</span>
+                            </div>
+                        </div>
+                        <!-- Moved Clock Here -->
+                        <div class="mini-clock" title="Current Time">
+                            <span id="h1">0</span><span id="h2">0</span>:<span id="m1">0</span><span id="m2">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section - NEW BENTO GRID DESIGN -->
+        <section id="about" class="section-container">
+            <h2 class="section-title">About Me</h2>
+            <div class="bento-grid">
+                <!-- Box 1: Intro Text (Large) -->
+                <div class="bento-item bio-card glass-card">
+                    <h3>Who I Am</h3>
+                    <p>I am a detail-oriented <strong>Supply Chain Management</strong> and <strong>Computer Information
+                            Systems</strong> student. I thrive in environments where I can apply my technical skills to
+                        optimize business processes, bridging the gap between data and strategy.</p>
+                </div>
+
+                <!-- Box 2: Quick Stats -->
+                <div class="bento-item stats-card glass-card">
+                    <div class="stat-box">
+                        <span class="stat-number">3.59</span>
+                        <span class="stat-label">GPA</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="stat-number">BS</span>
+                        <span class="stat-label">Degree</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="stat-number">NJ</span>
+                        <span class="stat-label">Based</span>
+                    </div>
+                </div>
+
+                <!-- Box 3: Tech Stack (Full Width) -->
+                <div class="bento-item tech-stack-card glass-card">
+                    <div class="tech-stack-title">Technical Proficiency</div>
+                    <div class="tech-icons">
+                        <i class="fab fa-python" title="Python"></i>
+                        <i class="fab fa-java" title="Java"></i>
+                        <i class="fas fa-database" title="SQL / Databases"></i>
+                        <i class="fas fa-code-branch" title="SCM Systems"></i>
+                        <i class="fas fa-chart-bar" title="Data Analytics"></i>
+                        <i class="fas fa-file-excel" title="Excel / Sheets"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="section-container">
+            <h2 class="section-title">Experience</h2>
+            <div class="timeline">
+
+                <div class="timeline-item glass-card">
+                    <div class="timeline-date">Present</div>
+                    <div class="timeline-content">
+                        <h3>IT Help Desk Worker</h3>
+                        <h4>Caldwell University</h4>
+                        <ul>
+                            <li>Monitored and managed electronic access control systems for campus facilities.</li>
+                            <li>Assisted students and staff with access issues and system-related inquiries.</li>
+                            <li>Supported daily security operations and documented incidents as required.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item glass-card">
+                    <div class="timeline-date">Externship</div>
+                    <div class="timeline-content">
+                        <h3>IT Help Desk Extern</h3>
+                        <h4>West Essex YMCA</h4>
+                        <ul>
+                            <li>Provided hands-on IT support and troubleshooting assistance.</li>
+                            <li>Guided users on security protocols, system maintenance, and basic networking concepts.
+                            </li>
+                            <li>Assisted with practical applications including database management and system
+                                configuration.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item glass-card">
+                    <div class="timeline-date">Internship</div>
+                    <div class="timeline-content">
+                        <h3>Account Executive Intern</h3>
+                        <h4>NL30</h4>
+                        <ul>
+                            <li>Conducted market research and data analysis to identify consumer trends.</li>
+                            <li>Created visual reports and presentations to support marketing strategies.</li>
+                            <li>Delivered data-driven insights for nonprofit organizations to improve brand awareness.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item glass-card">
+                    <div class="timeline-date">Past</div>
+                    <div class="timeline-content">
+                        <h3>Financial Assistant</h3>
+                        <h4>Caldwell University</h4>
+                        <ul>
+                            <li>Maintained financial records and processed administrative forms.</li>
+                            <li>Updated student accounts and resolved billing discrepancies.</li>
+                            <li>Assisted with account reconciliation and departmental reporting.</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section-container">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card glass-card">
+                    <h3><i class="fas fa-chart-line"></i> Business Analytics</h3>
+                    <p style="margin-top:1rem;">Applied advanced regression techniques to analyze trends and predict
+                        outcomes using real-world datasets.</p>
+                </div>
+                <div class="project-card glass-card">
+                    <h3><i class="fas fa-database"></i> Database Management</h3>
+                    <p style="margin-top:1rem;">Designed relational database schemas and implemented SQL queries to
+                        ensure data integrity.</p>
+                </div>
+                <!-- Bloomberg Certification -->
+                <div class="project-card glass-card" style="grid-column: span 2;">
+                    <h3><i class="fas fa-certificate"></i> Bloomberg Certification</h3>
+                    <h4 style="font-size:0.9rem; color:var(--text-muted); margin-bottom:0.5rem;">Bloomberg Market
+                        Concepts (BMC) — Bloomberg LP</h4>
+                    <ul style="text-align:left; margin-left:20px; font-size:0.95rem; list-style-type:circle;">
+                        <li>Analyzed equities, fixed income, currencies, and commodities using Bloomberg Terminal
+                            functions.</li>
+                        <li>Retrieved and interpreted real-time and historical market data for financial and economic
+                            analysis.</li>
+                        <li>Used Bloomberg functions (e.g., DES, FA, GP, WEI) to evaluate company performance and
+                            macroeconomic indicators.</li>
+                        <li>Applied financial ratios, yield curves, and valuation metrics to support investment
+                            decisions.</li>
+                        <li>Conducted market trend analysis using Bloomberg charts and analytics tools.</li>
+                        <li>Exported Bloomberg data to Excel for further modeling and visualization.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Video Showcase Section -->
+        <section id="video-showcase" class="section-container">
+            <h2 class="section-title">Video Showcase</h2>
+            <div class="glass-card" style="max-width: 800px; margin: 0 auto;">
+                <h3><i class="fab fa-youtube"></i> Featured Media</h3>
+                <div style="margin:1rem 0; display:flex; gap:5px;">
+                    <input type="text" id="video-url" placeholder="Paste YouTube URL to showcase..."
+                        style="flex:1; padding:10px; border-radius:10px; border:none; background:rgba(255,255,255,0.5);">
+                    <button id="load-video"
+                        style="border:none; background:var(--primary-color); color:white; padding:10px 20px; border-radius:10px; cursor:pointer;">Load
+                        Video</button>
+                </div>
+                <div class="video-wrapper">
+                    <iframe id="video-frame" width="100%" height="400" src="https://www.youtube.com/embed/jfKfPfyJRdk"
+                        frameborder="0" allowfullscreen style="border-radius:10px;"></iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- Music Lounge -->
+        <section id="music-lounge" class="section-container">
+            <h2 class="section-title">Music Lounge</h2>
+            <div class="glass-card music-lounge-container">
+                <div class="music-controls">
+                    <h3><i class="fas fa-music"></i> Quick Play Genres</h3>
+                    <div class="genre-buttons">
+                        <button class="genre-btn" data-video="jfKfPfyJRdk">Lofi Beats</button>
+                        <button class="genre-btn" data-video="DX7f7c46114">Jazz Radio</button>
+                        <button class="genre-btn" data-video="36YnV9STBqc">Pop Mix</button>
+                        <button class="genre-btn" data-video="mCDSf5Hh8e0">Classical</button>
+                    </div>
+
+                    <div class="search-bar-container">
+                        <input type="text" id="music-search-input" placeholder="Paste YouTube Link or Search Genre...">
+                        <button id="music-search-btn"><i class="fas fa-search"></i></button>
+                    </div>
+
+                    <div class="now-playing">
+                        <span id="current-track">Select a Genre to Play</span>
+                        <button id="music-play-pause"><i class="fas fa-play"></i></button>
+                    </div>
+                </div>
+
+                <!-- Hidden Player -->
+                <div id="music-player-wrapper" style="height:0; overflow:hidden;">
+                    <!-- IFrame will be injected here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Updated Puzzle Section -->
+        <section id="puzzle" class="section-container">
+            <h2 class="section-title">Interactive Zone</h2>
+            <div class="glass-card riddle-container" style="max-width: 600px; margin: 0 auto;">
+                <div class="riddle-header">
+                    <h3><i class="fas fa-puzzle-piece"></i> Solve the Riddle</h3>
+                    <!-- Removed riddle count element as requested -->
+                </div>
+
+                <p id="riddle-question" style="font-style:italic; margin:1rem 0; font-size: 1.1rem;">Loading riddle...
+                </p>
+
+                <div style="margin: 1.5rem 0;">
+                    <input type="text" id="riddle-answer" class="riddle-input" placeholder="Type answer...">
+                    <button id="submit-riddle" class="btn-primary" style="padding: 0.8rem 1.5rem;">Unlock</button>
+                </div>
+
+                <div class="riddle-actions"
+                    style="margin-top: 1rem; display: flex; justify-content: center; gap: 10px;">
+                    <button id="show-answer-btn" class="btn-secondary" style="font-size: 0.8rem;">Show Answer</button>
+                </div>
+
+                <div id="riddle-feedback" class="riddle-feedback"></div>
+                <div id="answer-reveal" class="hidden-answer"
+                    style="display:none; color:var(--text-muted); margin-top:10px;"></div>
+
+                <div id="hidden-reward" class="hidden-reward">
+                    <h4>🎉 Correct!</h4>
+                    <p id="reward-text">Next riddle loading...</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section-container">
+            <h2 class="section-title">Contact</h2>
+            <div class="glass-card" style="text-align: center; max-width: 500px; margin: 0 auto;">
+                <p>Feel free to reach out for collaborations or opportunities.</p>
+                <div style="display:flex; justify-content:center; gap:2rem; margin-top:2rem; font-size: 2rem;">
+                    <a href="mailto:vaishalishah9582@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+                    <a href="https://linkedin.com/in/vaishalishah" target="_blank" title="LinkedIn"><i
+                            class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Chatbot -->
+    <div class="chatbot-container">
+        <div class="chat-toggle" id="chat-toggle">
+            <i class="fas fa-comment-dots"></i>
+        </div>
+        <div class="chat-window hidden" id="chat-window">
+            <div class="chat-header">
+                <h3>Vaishali AI</h3>
+                <span class="close-chat" id="close-chat">&times;</span>
+            </div>
+            <div class="chat-messages" id="chat-messages">
+                <div class="message bot-message">Hello! Ask me about Vaishali's experience or skills.</div>
+            </div>
+            <div class="chat-input-area">
+                <input type="text" id="chat-input" placeholder="Type a message...">
+                <button id="send-btn"
+                    style="border:none; background:transparent; color:var(--primary-color); font-size:1.2rem;"><i
+                        class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/media.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/chatbot.js"></script>
+    <script src="js/puzzle.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
